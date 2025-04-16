@@ -13,6 +13,6 @@ jobs:
         dotnet-version: "8.0.x"
     - name: Display dotnet version
       run: dotnet --version
-    - name: Build code
-      run: dotnet build
+    - name: Build and Test
+      run: dotnet build && dotnet test
     
