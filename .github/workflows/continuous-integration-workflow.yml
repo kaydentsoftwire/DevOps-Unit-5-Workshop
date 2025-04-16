@@ -13,4 +13,6 @@ jobs:
         dotnet-version: ${{ matrix.dotnet-version }}
     - name: Display dotnet version
       run: dotnet --version
+    - name: Build code
+      run: dotnet build
     
