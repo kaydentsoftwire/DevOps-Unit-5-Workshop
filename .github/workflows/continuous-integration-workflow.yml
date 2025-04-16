@@ -15,4 +15,12 @@ jobs:
       run: dotnet --version
     - name: Build and Test
       run: dotnet build && dotnet test
-    
+    - name: Install dependencies
+      run: npm install
+    - name: Build typescript code
+      run: npm run build
+    - name: Run linter
+      run: npm run lint
+    - name: Run typescript tests
+      run: npm t
+      
